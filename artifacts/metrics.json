@@ -1,0 +1,251 @@
+{
+  "dataset_profile": {
+    "dataset_name": "Breast Cancer Wisconsin (Diagnostic)",
+    "dataset_source": "UCI Machine Learning Repository",
+    "rows": 569,
+    "features": 30,
+    "target_column": "diagnosis",
+    "class_distribution": {
+      "malignant": 212,
+      "benign": 357
+    }
+  },
+  "split_summary": {
+    "train_rows": 455,
+    "test_rows": 114,
+    "random_state": 42,
+    "test_size": 0.2
+  },
+  "metrics": {
+    "Logistic Regression": {
+      "accuracy": 0.9825,
+      "auc": 0.9954,
+      "precision": 0.9861,
+      "recall": 0.9861,
+      "f1": 0.9861,
+      "mcc": 0.9623,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9761904761904762,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.9761904761904762,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9861111111111112,
+          "recall": 0.9861111111111112,
+          "f1-score": 0.9861111111111112,
+          "support": 72.0
+        },
+        "accuracy": 0.9824561403508771,
+        "macro avg": {
+          "precision": 0.9811507936507937,
+          "recall": 0.9811507936507937,
+          "f1-score": 0.9811507936507937,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9824561403508771,
+          "recall": 0.9824561403508771,
+          "f1-score": 0.9824561403508771,
+          "support": 114.0
+        }
+      },
+      "model_file": "logistic_regression.joblib"
+    },
+    "Decision Tree": {
+      "accuracy": 0.9123,
+      "auc": 0.9142,
+      "precision": 0.9429,
+      "recall": 0.9167,
+      "f1": 0.9296,
+      "mcc": 0.8139,
+      "confusion_matrix": [
+        [
+          38,
+          4
+        ],
+        [
+          6,
+          66
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.8636363636363636,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.8837209302325582,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9428571428571428,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9295774647887324,
+          "support": 72.0
+        },
+        "accuracy": 0.9122807017543859,
+        "macro avg": {
+          "precision": 0.9032467532467532,
+          "recall": 0.9107142857142857,
+          "f1-score": 0.9066491975106452,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9136705399863294,
+          "recall": 0.9122807017543859,
+          "f1-score": 0.9126829520575104,
+          "support": 114.0
+        }
+      },
+      "model_file": "decision_tree.joblib"
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 0.9737,
+      "auc": 0.9884,
+      "precision": 0.96,
+      "recall": 1.0,
+      "f1": 0.9796,
+      "mcc": 0.9442,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          0,
+          72
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9629629629629629,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.96,
+          "recall": 1.0,
+          "f1-score": 0.9795918367346939,
+          "support": 72.0
+        },
+        "accuracy": 0.9736842105263158,
+        "macro avg": {
+          "precision": 0.98,
+          "recall": 0.9642857142857143,
+          "f1-score": 0.9712773998488284,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9747368421052632,
+          "recall": 0.9736842105263158,
+          "f1-score": 0.9734654095556351,
+          "support": 114.0
+        }
+      },
+      "model_file": "k_nearest_neighbors.joblib"
+    },
+    "Gaussian Naive Bayes": {
+      "accuracy": 0.9298,
+      "auc": 0.9868,
+      "precision": 0.9444,
+      "recall": 0.9444,
+      "f1": 0.9444,
+      "mcc": 0.8492,
+      "confusion_matrix": [
+        [
+          38,
+          4
+        ],
+        [
+          4,
+          68
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9047619047619048,
+          "recall": 0.9047619047619048,
+          "f1-score": 0.9047619047619048,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9444444444444444,
+          "recall": 0.9444444444444444,
+          "f1-score": 0.9444444444444444,
+          "support": 72.0
+        },
+        "accuracy": 0.9298245614035088,
+        "macro avg": {
+          "precision": 0.9246031746031746,
+          "recall": 0.9246031746031746,
+          "f1-score": 0.9246031746031746,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9298245614035088,
+          "recall": 0.9298245614035088,
+          "f1-score": 0.9298245614035088,
+          "support": 114.0
+        }
+      },
+      "model_file": "gaussian_naive_bayes.joblib"
+    },
+    "Random Forest": {
+      "accuracy": 0.9474,
+      "auc": 0.9931,
+      "precision": 0.9583,
+      "recall": 0.9583,
+      "f1": 0.9583,
+      "mcc": 0.8869,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9285714285714286,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9583333333333334,
+          "recall": 0.9583333333333334,
+          "f1-score": 0.9583333333333334,
+          "support": 72.0
+        },
+        "accuracy": 0.9473684210526315,
+        "macro avg": {
+          "precision": 0.9434523809523809,
+          "recall": 0.9434523809523809,
+          "f1-score": 0.9434523809523809,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9473684210526315,
+          "f1-score": 0.9473684210526315,
+          "support": 114.0
+        }
+      },
+      "model_file": "random_forest.joblib"
+    }
+  }
+}
